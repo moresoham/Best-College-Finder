@@ -1,0 +1,31 @@
+
+{% block body %}
+  {% from "includes/formhelper.html" import render_field %}
+  <form method="POST" action="">
+    <div class="form-group">
+      {{render_field(form.firstname, class_="form-control")}}
+    </div>
+    <div class="form-group">
+      {{render_field(form.lastname, class_="form-control")}}
+    </div>
+    <div class="form-group">
+      {{render_field(form.username, class_="form-control")}}
+    </div>
+    <div class="form-group">
+      {{render_field(form.email, class_="form-control")}}
+    </div>
+    <div class="form-group">
+      {{render_field(form.cetscore, class_="form-control")}}
+    </div>
+    <div class="form-group">
+      {{render_field(form.streams, class_="form-control")}}
+    </div>
+    <div class="form-group">
+      {{render_field(form.locations, class_="form-control")}}
+    </div>
+    <div class="form-group">
+      {{render_field(form.facilities, class_="form-control")}}
+    </div>
+    <p><input type="submit" class="btn btn-primary" value="Submit"></p>
+  </form>
+{% endblock %}
